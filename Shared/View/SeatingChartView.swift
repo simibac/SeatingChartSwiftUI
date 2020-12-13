@@ -28,9 +28,9 @@ struct SeatingChartView: View {
                             case .available:
                                 SeatView(selected: config.seats[cell.coordinate]!.selected, color: config.seats[cell.coordinate]!.color)
                                     .onTapGesture {
-                                        withAnimation{
+//                                        withAnimation{
                                             config.toggle(coordinate: cell.coordinate)
-                                        }
+//                                        }
                                     }
                             case .label:
                                 ChartLabelView(text: String(cell.label))

@@ -100,6 +100,14 @@ class SeatingChartConfig: ObservableObject, Equatable {
         }
     }
     
+    func unselect(id:UUID){
+        for (key, value) in seats{
+            if value.id == id {
+                seats[key]!.selected = false
+            }
+        }
+    }
+    
     func coordinate(id:UUID) -> Coordinate{
         for (key, value) in seats{
             if value.id == id {

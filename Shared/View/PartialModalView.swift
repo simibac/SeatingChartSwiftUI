@@ -53,6 +53,7 @@ struct PartialModalView<Content: View>: View {
                             }
                         }
                     }))
+                    .animation(.spring())
             }
         }
         .ignoresSafeArea(.all, edges: .bottom)
