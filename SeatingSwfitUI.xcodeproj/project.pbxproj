@@ -13,8 +13,8 @@
 		36C22D0125851465009C97D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22CEC25851464009C97D8 /* ContentView.swift */; };
 		36C22D0225851465009C97D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C22CED25851465009C97D8 /* Assets.xcassets */; };
 		36C22D0325851465009C97D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C22CED25851465009C97D8 /* Assets.xcassets */; };
-		36C22D11258514F2009C97D8 /* SeatingChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D10258514F2009C97D8 /* SeatingChartConfig.swift */; };
-		36C22D12258514F2009C97D8 /* SeatingChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D10258514F2009C97D8 /* SeatingChartConfig.swift */; };
+		36C22D11258514F2009C97D8 /* SectorChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D10258514F2009C97D8 /* SectorChartConfig.swift */; };
+		36C22D12258514F2009C97D8 /* SectorChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D10258514F2009C97D8 /* SectorChartConfig.swift */; };
 		36C22D182585156A009C97D8 /* SeatDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D172585156A009C97D8 /* SeatDetailsModel.swift */; };
 		36C22D192585156A009C97D8 /* SeatDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D172585156A009C97D8 /* SeatDetailsModel.swift */; };
 		36C22D1E25851613009C97D8 /* SeatingChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D1D25851613009C97D8 /* SeatingChartView.swift */; };
@@ -29,13 +29,17 @@
 		36C22D4325857E19009C97D8 /* LegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D4125857E19009C97D8 /* LegendView.swift */; };
 		36C22D4C2585942D009C97D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D4B2585942D009C97D8 /* Constants.swift */; };
 		36C22D4D2585942D009C97D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D4B2585942D009C97D8 /* Constants.swift */; };
-		36C22D57258597F1009C97D8 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 36C22D56258597F1009C97D8 /* PartialSheet */; };
 		36C22D5F258598C0009C97D8 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D5E258598C0009C97D8 /* CheckoutView.swift */; };
 		36C22D60258598C0009C97D8 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D5E258598C0009C97D8 /* CheckoutView.swift */; };
 		36C22D6825862E01009C97D8 /* PartialModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* PartialModalView.swift */; };
 		36C22D6925862E01009C97D8 /* PartialModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* PartialModalView.swift */; };
-		36C22D752586520B009C97D8 /* SectorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D742586520B009C97D8 /* SectorDetails.swift */; };
-		36C22D762586520B009C97D8 /* SectorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D742586520B009C97D8 /* SectorDetails.swift */; };
+		36C22D752586520B009C97D8 /* SectorDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D742586520B009C97D8 /* SectorDetailsModel.swift */; };
+		36C22D762586520B009C97D8 /* SectorDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D742586520B009C97D8 /* SectorDetailsModel.swift */; };
+		D1A49162778E10722FDB2A6B /* SeatingChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A49839A8FA6D7C7061D22F /* SeatingChartModel.swift */; };
+		D1A493021B3544742181C247 /* SectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A49D480ECA007770BCFE10 /* SectorModel.swift */; };
+		D1A495E920321F58771326D7 /* SectorChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A491591B348FA10051C48B /* SectorChartView.swift */; };
+		D1A49D77C4987D395FC70910 /* SectorChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A491591B348FA10051C48B /* SectorChartView.swift */; };
+		D1A49ED124A34C6724449FB6 /* SeatingChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A49839A8FA6D7C7061D22F /* SeatingChartModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +51,7 @@
 		36C22CFA25851465009C97D8 /* SeatingSwfitUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeatingSwfitUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C22CFC25851465009C97D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36C22CFD25851465009C97D8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		36C22D10258514F2009C97D8 /* SeatingChartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatingChartConfig.swift; sourceTree = "<group>"; };
+		36C22D10258514F2009C97D8 /* SectorChartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorChartConfig.swift; sourceTree = "<group>"; };
 		36C22D172585156A009C97D8 /* SeatDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatDetailsModel.swift; sourceTree = "<group>"; };
 		36C22D1D25851613009C97D8 /* SeatingChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatingChartView.swift; sourceTree = "<group>"; };
 		36C22D2725851B31009C97D8 /* SeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatView.swift; sourceTree = "<group>"; };
@@ -57,7 +61,10 @@
 		36C22D4B2585942D009C97D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		36C22D5E258598C0009C97D8 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		36C22D6725862E01009C97D8 /* PartialModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialModalView.swift; sourceTree = "<group>"; };
-		36C22D742586520B009C97D8 /* SectorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorDetails.swift; sourceTree = "<group>"; };
+		36C22D742586520B009C97D8 /* SectorDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorDetailsModel.swift; sourceTree = "<group>"; };
+		D1A491591B348FA10051C48B /* SectorChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectorChartView.swift; sourceTree = "<group>"; };
+		D1A49839A8FA6D7C7061D22F /* SeatingChartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatingChartModel.swift; sourceTree = "<group>"; };
+		D1A49D480ECA007770BCFE10 /* SectorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C22D57258597F1009C97D8 /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +140,9 @@
 				36C22D172585156A009C97D8 /* SeatDetailsModel.swift */,
 				36C22D2E25851E62009C97D8 /* SeatModel.swift */,
 				36C22D4B2585942D009C97D8 /* Constants.swift */,
-				36C22D742586520B009C97D8 /* SectorDetails.swift */,
+				36C22D742586520B009C97D8 /* SectorDetailsModel.swift */,
+				D1A49D480ECA007770BCFE10 /* SectorModel.swift */,
+				D1A49839A8FA6D7C7061D22F /* SeatingChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				36C22D4125857E19009C97D8 /* LegendView.swift */,
 				36C22D6725862E01009C97D8 /* PartialModalView.swift */,
 				36C22D5E258598C0009C97D8 /* CheckoutView.swift */,
+				D1A491591B348FA10051C48B /* SectorChartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,7 +164,7 @@
 		36C22D2425851687009C97D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				36C22D10258514F2009C97D8 /* SeatingChartConfig.swift */,
+				36C22D10258514F2009C97D8 /* SectorChartConfig.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,7 +186,7 @@
 			);
 			name = "SeatingSwfitUI (iOS)";
 			packageProductDependencies = (
-				36C22D56258597F1009C97D8 /* PartialSheet */,
+				36C22D56258597F1009C97D8,
 			);
 			productName = "SeatingSwfitUI (iOS)";
 			productReference = 36C22CF225851465009C97D8 /* SeatingSwfitUI.app */;
@@ -227,7 +236,7 @@
 			);
 			mainGroup = 36C22CE525851464009C97D8;
 			packageReferences = (
-				36C22D55258597F1009C97D8 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+				36C22D55258597F1009C97D8,
 			);
 			productRefGroup = 36C22CF325851465009C97D8 /* Products */;
 			projectDirPath = "";
@@ -264,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C22D0025851465009C97D8 /* ContentView.swift in Sources */,
-				36C22D752586520B009C97D8 /* SectorDetails.swift in Sources */,
+				36C22D752586520B009C97D8 /* SectorDetailsModel.swift in Sources */,
 				36C22D4C2585942D009C97D8 /* Constants.swift in Sources */,
 				36C22D4225857E19009C97D8 /* LegendView.swift in Sources */,
 				36C22CFE25851465009C97D8 /* SeatingSwfitUIApp.swift in Sources */,
@@ -273,9 +282,12 @@
 				36C22D5F258598C0009C97D8 /* CheckoutView.swift in Sources */,
 				36C22D3D25857A98009C97D8 /* ChartLabelView.swift in Sources */,
 				36C22D182585156A009C97D8 /* SeatDetailsModel.swift in Sources */,
-				36C22D11258514F2009C97D8 /* SeatingChartConfig.swift in Sources */,
+				36C22D11258514F2009C97D8 /* SectorChartConfig.swift in Sources */,
 				36C22D6825862E01009C97D8 /* PartialModalView.swift in Sources */,
 				36C22D2F25851E62009C97D8 /* SeatModel.swift in Sources */,
+				D1A493021B3544742181C247 /* SectorModel.swift in Sources */,
+				D1A49162778E10722FDB2A6B /* SeatingChartModel.swift in Sources */,
+				D1A495E920321F58771326D7 /* SectorChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C22D0125851465009C97D8 /* ContentView.swift in Sources */,
-				36C22D762586520B009C97D8 /* SectorDetails.swift in Sources */,
+				36C22D762586520B009C97D8 /* SectorDetailsModel.swift in Sources */,
 				36C22D4D2585942D009C97D8 /* Constants.swift in Sources */,
 				36C22D4325857E19009C97D8 /* LegendView.swift in Sources */,
 				36C22CFF25851465009C97D8 /* SeatingSwfitUIApp.swift in Sources */,
@@ -293,9 +305,11 @@
 				36C22D60258598C0009C97D8 /* CheckoutView.swift in Sources */,
 				36C22D3E25857A98009C97D8 /* ChartLabelView.swift in Sources */,
 				36C22D192585156A009C97D8 /* SeatDetailsModel.swift in Sources */,
-				36C22D12258514F2009C97D8 /* SeatingChartConfig.swift in Sources */,
+				36C22D12258514F2009C97D8 /* SectorChartConfig.swift in Sources */,
 				36C22D6925862E01009C97D8 /* PartialModalView.swift in Sources */,
 				36C22D3025851E62009C97D8 /* SeatModel.swift in Sources */,
+				D1A49ED124A34C6724449FB6 /* SeatingChartModel.swift in Sources */,
+				D1A49D77C4987D395FC70910 /* SectorChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +553,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		36C22D55258597F1009C97D8 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+		36C22D55258597F1009C97D8 = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
 			requirement = {
@@ -550,9 +564,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		36C22D56258597F1009C97D8 /* PartialSheet */ = {
+		36C22D56258597F1009C97D8 = {
 			isa = XCSwiftPackageProductDependency;
-			package = 36C22D55258597F1009C97D8 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			package = 36C22D55258597F1009C97D8;
 			productName = PartialSheet;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CheckoutView: View {
-    @EnvironmentObject var config: SeatingChartConfig
+    @EnvironmentObject var config: SectorChartConfig
     @State var txt = ""
 
     var body: some View {

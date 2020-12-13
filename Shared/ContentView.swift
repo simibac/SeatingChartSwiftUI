@@ -14,8 +14,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             VStack {
-                LegendView().padding()
-                SeatingChartView()
+//                LegendView().padding()
+                SectorChartView()
+//                SeatingChartView()
             }
             PartialModalView(offset: $offset) {
                 CheckoutView()

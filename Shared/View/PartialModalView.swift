@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PartialModalView<Content: View>: View {
-    @EnvironmentObject var config: SeatingChartConfig
+    @EnvironmentObject var config: SectorChartConfig
     @Binding var offset: CGFloat
 
     var content: () -> Content

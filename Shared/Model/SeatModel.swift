@@ -14,4 +14,5 @@ struct SeatModel: Identifiable, Hashable, Equatable {
     var color: Color
     var char: Character
     var selected: Bool = false
+    var coordinate: Coordinate
 }
