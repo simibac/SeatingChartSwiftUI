@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-struct SeatModel:Identifiable, Hashable, Equatable{
+struct SeatModel: Identifiable, Hashable, Equatable {
     var id = UUID()
-    var price:Double
-    var color:Color
-    var char:Character
-    var selected:Bool = false
+    var price: Double
+    var color: Color
+    var char: Character
+    var selected: Bool = false
 }

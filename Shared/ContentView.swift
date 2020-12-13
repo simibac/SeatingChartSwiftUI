@@ -9,11 +9,11 @@ import SwiftUI
 import PartialSheet
 
 struct ContentView: View {
-    @State var offset : CGFloat = 0
+    @State var offset: CGFloat = 0
 
     var body: some View {
-        ZStack{
-            VStack{
+        ZStack {
+            VStack {
                 LegendView().padding()
                 SeatingChartView()
             }

@@ -34,6 +34,8 @@
 		36C22D60258598C0009C97D8 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D5E258598C0009C97D8 /* CheckoutView.swift */; };
 		36C22D6825862E01009C97D8 /* PartialModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* PartialModalView.swift */; };
 		36C22D6925862E01009C97D8 /* PartialModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* PartialModalView.swift */; };
+		36C22D752586520B009C97D8 /* SectorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D742586520B009C97D8 /* SectorDetails.swift */; };
+		36C22D762586520B009C97D8 /* SectorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D742586520B009C97D8 /* SectorDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,7 @@
 		36C22D4B2585942D009C97D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		36C22D5E258598C0009C97D8 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		36C22D6725862E01009C97D8 /* PartialModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialModalView.swift; sourceTree = "<group>"; };
+		36C22D742586520B009C97D8 /* SectorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 				36C22D172585156A009C97D8 /* SeatDetailsModel.swift */,
 				36C22D2E25851E62009C97D8 /* SeatModel.swift */,
 				36C22D4B2585942D009C97D8 /* Constants.swift */,
+				36C22D742586520B009C97D8 /* SectorDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C22D0025851465009C97D8 /* ContentView.swift in Sources */,
+				36C22D752586520B009C97D8 /* SectorDetails.swift in Sources */,
 				36C22D4C2585942D009C97D8 /* Constants.swift in Sources */,
 				36C22D4225857E19009C97D8 /* LegendView.swift in Sources */,
 				36C22CFE25851465009C97D8 /* SeatingSwfitUIApp.swift in Sources */,
@@ -279,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C22D0125851465009C97D8 /* ContentView.swift in Sources */,
+				36C22D762586520B009C97D8 /* SectorDetails.swift in Sources */,
 				36C22D4D2585942D009C97D8 /* Constants.swift in Sources */,
 				36C22D4325857E19009C97D8 /* LegendView.swift in Sources */,
 				36C22CFF25851465009C97D8 /* SeatingSwfitUIApp.swift in Sources */,

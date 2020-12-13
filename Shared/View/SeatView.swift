@@ -8,33 +8,33 @@
 import SwiftUI
 
 struct SeatView: View {
-    var selected:Bool
-    var color:Color
-    var available:Bool = true
-    var fill:Bool = false
-    
-    var fillColor:Color{
-        if !available || fill{
+    var selected: Bool
+    var color: Color
+    var available: Bool = true
+    var fill: Bool = false
+
+    var fillColor: Color {
+        if !available || fill {
             return color
-        }else if selected{
+        } else if selected {
             return .green
-        }else{
+        } else {
             return .clear
         }
     }
-    
-    var borderColor:Color{
-        if selected{
+
+    var borderColor: Color {
+        if selected {
             return .green
         } else {
             return color
         }
     }
-    
+
     var body: some View {
         Rectangle()
-            .fill(fillColor)
-            .border(borderColor, width: 2)
-            .cornerRadius(3)
+                .fill(fillColor)
+                .border(borderColor, width: 2)
+                .cornerRadius(3)
     }
 }

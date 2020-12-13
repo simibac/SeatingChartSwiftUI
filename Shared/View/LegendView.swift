@@ -8,28 +8,28 @@
 import SwiftUI
 
 struct LegendView: View {
-    @EnvironmentObject var config:SeatingChartConfig
+    @EnvironmentObject var config: SeatingChartConfig
 
     var body: some View {
         DisclosureGroup(content: {
-            VStack{
+            VStack {
                 ForEach(config.seatDetailsList, id: \.id) { details in
                     if details.description == nil {
-                        LegendItem(color:details.color, category:details.category, price: config.price(amount: details.price), showPrice: details.available)
-                            .padding(.trailing, 20)
+                        LegendItem(color: details.color, category: details.category, price: config.price(amount: details.price), showPrice: details.available)
+                                .padding(.trailing, 20)
 
-                    }else{
+                    } else {
                         DisclosureGroup(content: {
-                            HStack{
+                            HStack {
                                 Text(details.description!)
-                                    .font(.caption)
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.horizontal, 28)
+                                        .font(.caption)
+                                        .multilineTextAlignment(.leading)
+                                        .padding(.horizontal, 28)
                                 Spacer()
                             }
 
                         }, label: {
-                            LegendItem(color:details.color, category:details.category, price: config.price(amount: details.price), showPrice: details.available)
+                            LegendItem(color: details.color, category: details.category, price: config.price(amount: details.price), showPrice: details.available)
                         })
                     }
                 }
@@ -40,16 +40,16 @@ struct LegendView: View {
     }
 }
 
-struct LegendItem: View{
-    var color:Color
-    var category:String
-    var price:String
-    var showPrice:Bool
-    
-    var body: some View{
-        HStack{
-            SeatView(selected: false, color: color, fill:true)
-                .frame(width:20, height:20)
+struct LegendItem: View {
+    var color: Color
+    var category: String
+    var price: String
+    var showPrice: Bool
+
+    var body: some View {
+        HStack {
+            SeatView(selected: false, color: color, fill: true)
+                    .frame(width: 20, height: 20)
             Text("\(category)")
             Spacer()
             if showPrice {

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Constants{
+struct Constants {
     static let radius = CGFloat(10)
     static let minHeightRatio = CGFloat(10)
     static let indicatorWidth = CGFloat(10)

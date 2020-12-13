@@ -10,6 +10,15 @@ import SwiftUI
 @main
 struct SeatingSwfitUIApp: App {
     var seatingChartConfig = SeatingChartConfig(
+//        sectors: [
+//            "SSSSSSSSSSSSSS",
+//            "AAAAAAAAAAAAAA",
+//            "AAAAAAAAAAAAAA",
+//            "______________",
+//            "BBBBBB__CCCCCC",
+//            "BBBBBB__CCCCCC",
+//            "BBBBBB__CCCCCC"
+//        ],
         map: [
             "aaaaRR___XXXXXX",
             "aaaaaR___aaaaaX",
@@ -28,6 +37,11 @@ struct SeatingSwfitUIApp: App {
             "___cccc_cccc___",
             "___cccc_cccc___"
         ],
+        
+//        sectorDetails:[
+//            "S":SectorDetails()
+//        ]
+        
         seatDetails: [
             "a":SeatDetailModel(price: 0.1, color: .blue, category:"Balcony Seat", description: "Best view to enjoy the spectacle", available:true),
             "b":SeatDetailModel(price: 1, color: .purple, category:"VIP Area", description: "Exclusive area with all inclusive drinks and food", available:true),
@@ -41,44 +55,6 @@ struct SeatingSwfitUIApp: App {
         currency: "ETH",
         currencyDecimal: 4
     )
-    
-//    var seatingChartConfig2 = SeatingChartConfig(
-//        
-//        sectors: [
-//            "SSSSSSSSSSSSSS",
-//            "AAAAAAAAAAAAAA",
-//            "AAAAAAAAAAAAAA",
-//            "______________",
-//            "BBBBBB__CCCCCC",
-//            "BBBBBB__CCCCCC",
-//            "BBBBBB__CCCCCC"
-//        ],
-//        
-//        map: [
-//            "aaaaaa__DDDDDD",
-//            "aaaaaa__aaaaaD",
-//            "aaaaaa__aaaaaa",
-//            "bbbbbb__bbbbbD",
-//            "bbbbbb__bbbbbD",
-//            "bbbbbb__bbbbbb",
-//            "______________",
-//            "cccccccccccccc",
-//            "_cccccccccccc_",
-//            "__cccccccccc__",
-//            "___cccccccc___"
-//
-//        ],
-//        
-//        seatDetails: [
-//            "a":SeatDetailModel(price: 10, color: .blue, category:"Balcony Seat"),
-//            "b":SeatDetailModel(price: 20, color: .purple, category:"VIP Area"),
-//            "c":SeatDetailModel(price: 30, color: .yellow, category:"Standard Seat"),
-//        ],
-//        sectorDetails:[
-//            "S":SectorDetails()
-//        ]
-//    
-//    )
     
     var body: some Scene {
         WindowGroup {
