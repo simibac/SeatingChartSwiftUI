@@ -40,7 +40,7 @@ struct CheckoutView : View {
                     ForEach(config.selectedSeats, id:\.id){ seat in
                         VStack{
                             HStack{
-                                SeatView(selected: false, color: seat.color)
+                                SeatView(selected: false, color: seat.color, fill: true)
                                     .frame(width:20, height:20)
                                 Text("\(config.coordinate(id: seat.id).col)\(config.coordinate(id: seat.id).row) \(config.seatDetails[seat.char]?.category ?? "")")
                                 Spacer()

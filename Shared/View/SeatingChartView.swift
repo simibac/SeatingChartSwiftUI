@@ -35,9 +35,10 @@ struct SeatingChartView: View {
                             case .label:
                                 ChartLabelView(text: String(cell.label))
                             case .unavailable:
-                                SeatView(selected: false, color: .gray)
+                                SeatView(selected: false, color: config.seats[cell.coordinate]!.color, available:false)
                             case .empty:
-                                SeatView(selected: false, color: .clear)
+                                SeatView(selected: false, color: .clear, available:false)
+                                    .opacity(0)
                             }
                         }
                     }

@@ -47,7 +47,7 @@ struct LegendItem: View{
     
     var body: some View{
         HStack{
-            SeatView(selected: false, color: color)
+            SeatView(selected: false, color: color, fill:true)
                 .frame(width:20, height:20)
             Text("\(category)")
             Spacer()

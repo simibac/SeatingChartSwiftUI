@@ -58,10 +58,7 @@ class SeatingChartConfig: ObservableObject, Equatable {
                 let char = map[r][c]
                 if let seatDetail = seatDetails[char]{
                     self.seats[coordinate] = SeatModel(price: seatDetail.price, color: seatDetail.color, char:char)
-                    self.cells.append(Cell(coordinate: coordinate, label:String(map[r][c]), cellType:.available))
-
-                } else if char == "D"{
-                    self.cells.append(Cell(coordinate: coordinate, label:String(map[r][c]), cellType:.unavailable))
+                    self.cells.append(Cell(coordinate: coordinate, label:String(map[r][c]), cellType: seatDetail.available ? .available:.unavailable))
                 }else{
                     self.cells.append(Cell(coordinate: coordinate, label:String(map[r][c]), cellType:.empty))
                 }

@@ -18,4 +18,5 @@ struct SeatDetailModel: Identifiable, Equatable, Comparable{
     var color:Color
     var category:String
     var description:String?
+    var available:Bool
 }
