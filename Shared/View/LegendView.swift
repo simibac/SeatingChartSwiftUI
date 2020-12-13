@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LegendView: View {
-    @StateObject var config:SeatingChartConfig
+    @EnvironmentObject var config:SeatingChartConfig
 
     var body: some View {
         DisclosureGroup(content: {

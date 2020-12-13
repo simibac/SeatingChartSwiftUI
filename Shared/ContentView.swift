@@ -13,8 +13,13 @@ struct ContentView: View {
 
     var body: some View {
         ZStack{
-            SeatingChartView()
-            SelectionSheetView(offset: $offset)
+            VStack{
+                LegendView().padding()
+                SeatingChartView()
+            }
+            PartialModalView(offset: $offset) {
+                CheckoutView()
+            }
         }
     }
 }

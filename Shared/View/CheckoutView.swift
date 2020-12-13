@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-struct BottomSheet : View {
-    @StateObject var config:SeatingChartConfig
+struct CheckoutView : View {
+    @EnvironmentObject var config:SeatingChartConfig
     @State var txt = ""
-    @Binding var offset : CGFloat
-    var value : CGFloat
   
     var body: some View{
       
@@ -49,12 +47,14 @@ struct BottomSheet : View {
                                 if seat.price != 0 {
                                     Text("\(String(format: "%.2f", seat.price)) $")
                                 }
-                            }
-                                .onTapGesture {
+                                Button(action: {
                                     withAnimation{
                                         config.toggle(id: seat.id)
                                     }
-                                }
+                                }, label: {
+                                    Image(systemName: "xmark.circle")
+                                })
+                            }
                             Divider()
                                 .padding(.top,10)
                         }
@@ -67,7 +67,13 @@ struct BottomSheet : View {
             
             HStack{
                 Spacer()
-                Text("Checkout")
+                Button("Checkout"){
+                    print("User wants to checkout following tickets ( \(config.totalPrice) \(config.currency): ")
+                    for ticket in config.selectedSeats{
+                        let coordinates = config.coordinate(id: ticket.id)
+                        print("\(coordinates.col)\(coordinates.row)")
+                    }
+                }
                     .font(.headline)
                     .foregroundColor(Color(UIColor.systemGray6))
                 Spacer()

@@ -10,12 +10,13 @@ import SwiftUI
 
 class SeatingChartConfig: ObservableObject, Equatable {
     var id = UUID()
-    static func == (lhs: SeatingChartConfig, rhs: SeatingChartConfig) -> Bool {
-        lhs.id == rhs.id
-    }
-    
     var map:[String]
     var seatDetails:[Character: SeatDetailModel]
+    var columns:[String]
+    var rows:[String]
+    var currency:String
+    var currencyDecimal:Int
+
     
     @Published var cells = [Cell]()
     @Published var seats = [Coordinate:SeatModel]()
@@ -23,13 +24,13 @@ class SeatingChartConfig: ObservableObject, Equatable {
     var layoutColumns:[GridItem]
     var layoutRows:[GridItem]
 
-    var columns:[String]
-    var rows:[String]
     var columLabelCells = [Cell]()
     
-    init(map:[String], seatDetails:[Character: SeatDetailModel], columns:[String] = [], rows:[String] = []) {
+    init(map:[String], seatDetails:[Character: SeatDetailModel], columns:[String] = [], rows:[String] = [], currency:String = "$", currencyDecimal:Int = 2) {
         self.map = map
         self.seatDetails = seatDetails
+        self.currency = currency
+        self.currencyDecimal = currencyDecimal
         self.layoutColumns = [GridItem](repeating: GridItem(.flexible()), count: map[0].count + 1)
         self.layoutRows = [GridItem](repeating: GridItem(.flexible()), count: map.count + 1)
         
@@ -109,6 +110,14 @@ class SeatingChartConfig: ObservableObject, Equatable {
             }
         }
         return Coordinate(col:"0", row:"0")
+    }
+    
+    func price(amount:Double) -> String {
+        return "\(amount) \(currency)"
+    }
+    
+    static func == (lhs: SeatingChartConfig, rhs: SeatingChartConfig) -> Bool {
+        lhs.id == rhs.id
     }
 }
 

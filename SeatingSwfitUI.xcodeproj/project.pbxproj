@@ -30,10 +30,10 @@
 		36C22D4C2585942D009C97D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D4B2585942D009C97D8 /* Constants.swift */; };
 		36C22D4D2585942D009C97D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D4B2585942D009C97D8 /* Constants.swift */; };
 		36C22D57258597F1009C97D8 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 36C22D56258597F1009C97D8 /* PartialSheet */; };
-		36C22D5F258598C0009C97D8 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D5E258598C0009C97D8 /* BottomSheet.swift */; };
-		36C22D60258598C0009C97D8 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D5E258598C0009C97D8 /* BottomSheet.swift */; };
-		36C22D6825862E01009C97D8 /* SelectionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* SelectionSheetView.swift */; };
-		36C22D6925862E01009C97D8 /* SelectionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* SelectionSheetView.swift */; };
+		36C22D5F258598C0009C97D8 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D5E258598C0009C97D8 /* CheckoutView.swift */; };
+		36C22D60258598C0009C97D8 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D5E258598C0009C97D8 /* CheckoutView.swift */; };
+		36C22D6825862E01009C97D8 /* PartialModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* PartialModalView.swift */; };
+		36C22D6925862E01009C97D8 /* PartialModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22D6725862E01009C97D8 /* PartialModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +53,8 @@
 		36C22D3C25857A98009C97D8 /* ChartLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLabelView.swift; sourceTree = "<group>"; };
 		36C22D4125857E19009C97D8 /* LegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendView.swift; sourceTree = "<group>"; };
 		36C22D4B2585942D009C97D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		36C22D5E258598C0009C97D8 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
-		36C22D6725862E01009C97D8 /* SelectionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSheetView.swift; sourceTree = "<group>"; };
+		36C22D5E258598C0009C97D8 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		36C22D6725862E01009C97D8 /* PartialModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,8 @@
 				36C22D2725851B31009C97D8 /* SeatView.swift */,
 				36C22D3C25857A98009C97D8 /* ChartLabelView.swift */,
 				36C22D4125857E19009C97D8 /* LegendView.swift */,
-				36C22D6725862E01009C97D8 /* SelectionSheetView.swift */,
-				36C22D5E258598C0009C97D8 /* BottomSheet.swift */,
+				36C22D6725862E01009C97D8 /* PartialModalView.swift */,
+				36C22D5E258598C0009C97D8 /* CheckoutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,11 +265,11 @@
 				36C22CFE25851465009C97D8 /* SeatingSwfitUIApp.swift in Sources */,
 				36C22D1E25851613009C97D8 /* SeatingChartView.swift in Sources */,
 				36C22D2825851B31009C97D8 /* SeatView.swift in Sources */,
-				36C22D5F258598C0009C97D8 /* BottomSheet.swift in Sources */,
+				36C22D5F258598C0009C97D8 /* CheckoutView.swift in Sources */,
 				36C22D3D25857A98009C97D8 /* ChartLabelView.swift in Sources */,
 				36C22D182585156A009C97D8 /* SeatDetailsModel.swift in Sources */,
 				36C22D11258514F2009C97D8 /* SeatingChartConfig.swift in Sources */,
-				36C22D6825862E01009C97D8 /* SelectionSheetView.swift in Sources */,
+				36C22D6825862E01009C97D8 /* PartialModalView.swift in Sources */,
 				36C22D2F25851E62009C97D8 /* SeatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,11 +284,11 @@
 				36C22CFF25851465009C97D8 /* SeatingSwfitUIApp.swift in Sources */,
 				36C22D1F25851613009C97D8 /* SeatingChartView.swift in Sources */,
 				36C22D2925851B31009C97D8 /* SeatView.swift in Sources */,
-				36C22D60258598C0009C97D8 /* BottomSheet.swift in Sources */,
+				36C22D60258598C0009C97D8 /* CheckoutView.swift in Sources */,
 				36C22D3E25857A98009C97D8 /* ChartLabelView.swift in Sources */,
 				36C22D192585156A009C97D8 /* SeatDetailsModel.swift in Sources */,
 				36C22D12258514F2009C97D8 /* SeatingChartConfig.swift in Sources */,
-				36C22D6925862E01009C97D8 /* SelectionSheetView.swift in Sources */,
+				36C22D6925862E01009C97D8 /* PartialModalView.swift in Sources */,
 				36C22D3025851E62009C97D8 /* SeatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -37,7 +37,9 @@ struct SeatingSwfitUIApp: App {
             "X":SeatDetailModel(price: 0, color: .gray, category:"Unavailable")
         ],
         columns:["a", "b", "c", "d", "e", "f", "g", "_", "h", "i", "j", "k", "l", "m", "n"],
-        rows: ["1", "2", "3", "4", "5", "6", "_", "7", "9", "10", "11", "12", "13", "14", "15", "16"]
+        rows: ["1", "2", "3", "4", "5", "6", "_", "7", "9", "10", "11", "12", "13", "14", "15", "16"],
+        currency: "ETH",
+        currencyDecimal: 6
     )
     
 //    var seatingChartConfig2 = SeatingChartConfig(

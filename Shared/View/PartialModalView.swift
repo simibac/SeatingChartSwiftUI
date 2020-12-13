@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct SelectionSheetView: View {
+struct PartialModalView<Content: View>: View {
     @EnvironmentObject var config:SeatingChartConfig
     @Binding var offset:CGFloat
+    
+    var content:() -> Content
     
     var body: some View {
         GeometryReader{reader in
             VStack{
-                BottomSheet(config:config, offset: $offset, value: (-reader.frame(in: .global).height + 150))
+                content()
                     .offset(y: config.totalPrice == 0 ? reader.frame(in: .global).height : reader.frame(in: .global).height - CGFloat(140))
                     .offset(y: config.totalPrice == 0 ? CGFloat(0) : offset)
                     .gesture(DragGesture().onChanged({ (value) in

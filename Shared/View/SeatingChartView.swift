@@ -15,8 +15,6 @@ struct SeatingChartView: View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)){
 
             VStack(){
-                LegendView(config: config).padding()
-
                 LazyVGrid(columns: config.layoutColumns){
                     ForEach(config.columLabelCells, id:\.id){ cell in
                         ChartLabelView(text: String(cell.label))
