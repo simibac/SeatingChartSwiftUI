@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 struct ContentView: View {
+    @State var offset : CGFloat = 0
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+            SeatingChartView()
+            SelectionSheetView(offset: $offset)
+        }
     }
 }
 
