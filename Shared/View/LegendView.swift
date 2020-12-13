@@ -15,7 +15,7 @@ struct LegendView: View {
             VStack{
                 ForEach(config.seatDetailsList, id: \.id) { details in
                     if details.description == nil {
-                        LegendItem(color:details.color, category:details.category, price:details.price)
+                        LegendItem(color:details.color, category:details.category, price: config.price(amount: details.price), showPrice: details.available)
                             .padding(.trailing, 20)
 
                     }else{
@@ -29,7 +29,7 @@ struct LegendView: View {
                             }
 
                         }, label: {
-                            LegendItem(color:details.color, category:details.category, price:details.price)
+                            LegendItem(color:details.color, category:details.category, price: config.price(amount: details.price), showPrice: details.available)
                         })
                     }
                 }
@@ -43,7 +43,8 @@ struct LegendView: View {
 struct LegendItem: View{
     var color:Color
     var category:String
-    var price:Double
+    var price:String
+    var showPrice:Bool
     
     var body: some View{
         HStack{
@@ -51,8 +52,8 @@ struct LegendItem: View{
                 .frame(width:20, height:20)
             Text("\(category)")
             Spacer()
-            if price != 0 {
-                Text("\(String(format: "%.2f", price)) $")
+            if showPrice {
+                Text(price)
             }
         }
     }

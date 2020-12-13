@@ -24,7 +24,7 @@ struct CheckoutView : View {
                 .foregroundColor(Color("systemBlack"))
 
             Spacer()
-            Text("Total: \(String(format: "%.2f", config.totalPrice)) $")
+            Text("Total: \(config.price(amount: config.totalPrice))")
                 .font(.headline)
                 .foregroundColor(Color(UIColor.systemGray6))
                 .padding()
@@ -68,7 +68,7 @@ struct CheckoutView : View {
             HStack{
                 Spacer()
                 Button("Checkout"){
-                    print("User wants to checkout following tickets ( \(config.totalPrice) \(config.currency): ")
+                    print("User wants to checkout following tickets (\(config.price(amount: config.totalPrice))): ")
                     for ticket in config.selectedSeats{
                         let coordinates = config.coordinate(id: ticket.id)
                         print("\(coordinates.col)\(coordinates.row)")

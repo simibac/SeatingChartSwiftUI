@@ -110,7 +110,11 @@ class SeatingChartConfig: ObservableObject, Equatable {
     }
     
     func price(amount:Double) -> String {
-        return "\(amount) \(currency)"
+        
+        let format = "%.\(currencyDecimal)f"
+        let price = String(format: format, amount)
+        
+        return "\(price) \(currency)"
     }
     
     static func == (lhs: SeatingChartConfig, rhs: SeatingChartConfig) -> Bool {
